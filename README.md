@@ -1,0 +1,2 @@
+# ezgilinaseran.github.io
+google.com, pub-6840766104040915, DIRECT, f08c47fec0942fa0
