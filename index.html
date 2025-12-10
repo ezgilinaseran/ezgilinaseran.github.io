@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinanSync - Kredi Takip Uygulaması</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+        h1 { font-size: 48px; margin-bottom: 20px; }
+        p { font-size: 20px; margin-bottom: 30px; line-height: 1.6; }
+        .links {
+            margin-top: 30px;
+        }
+        .links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+        .links a:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💳 FinanSync</h1>
+        <p>Kredilerinizi ve borçlarınızı kolayca takip edin!</p>
+        <p>Taksitlerinizi işaretleyin, ilerlemenizi görün ve finansal özgürlüğünüze ulaşın.</p>
+        
+        <div class="links">
+            <a href="https://play.google.com/store/apps/details?id=com.krediuygulamasi" target="_blank">
+                📱 Google Play'den İndirin
+            </a>
+            <a href="/privacy-settings/" target="_blank">
+                🔒 Gizlilik Politikası
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+4. **Commit new file**
+
+---
+
+### **ADIM 3: app-ads.txt'nin Yerde Olduğundan Emin Olun**
+
+GitHub'da **aynı repository**'de `app-ads.txt` dosyası olmalı:
+```
+ezgilinaseran.github.io/
+├── index.html (yeni oluşturdunuz)
+├── app-ads.txt (zaten var)
+└── privacy-settings/ (klasör, içinde privacy policy)
+```
+
+---
+
+## 🧪 TEST:
+
+5 dakika sonra tarayıcıda şu 3 linki açın:
+```
+1. https://ezgilinaseran.github.io/
+   → Ana sayfa görünmeli ✅
+
+2. https://ezgilinaseran.github.io/app-ads.txt
+   → google.com, pub-6840766104040915... ✅
+
+3. https://ezgilinaseran.github.io/privacy-settings/
+   → Privacy Policy ✅
+```
+
+Hepsi açılıyor mu?
+
+---
+
+## 📋 GOOGLE PLAY CONSOLE GÜNCELLEMESİ:
+
+### **Adım 1: Web Sitesini Değiştirin**
+```
+Eski: https://github.com/ezgilinaseran/privacy-settings
+Yeni: https://ezgilinaseran.github.io
